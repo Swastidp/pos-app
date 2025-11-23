@@ -43,4 +43,7 @@ A tablet-first Point of Sale interface built with React Native and Expo.
 
 ## Demo Video
 
-A demo video showcasing the app's features and flow is available in the repository.
+A demo video showcasing the app's features and flow is available here.
+
+https://github.com/user-attachments/assets/47af3613-8a50-4d56-bba8-504159e3b84f
+
