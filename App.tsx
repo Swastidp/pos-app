@@ -1,20 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import './global.css';
+import React from 'react';
+import { SafeAreaView, View, StatusBar } from 'react-native';
+import { CartSidebar } from './src/components/CartSidebar';
+import { MenuSection } from './src/components/MenuSection';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView className="flex-1 bg-zinc-900">
+      <StatusBar barStyle="light-content" />
+      <View className="flex-1 flex-row">
+        <View className="flex-[0.35] border-r border-zinc-800">
+          <CartSidebar />
+        </View>
+        <View className="flex-[0.65]">
+          <MenuSection />
+        </View>
+      </View>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
